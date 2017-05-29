@@ -42,10 +42,10 @@ MonoBehaviour:
     y: 30
     width: 1904
     height: 931
-  m_MinSize: {x: 681, y: 342}
+  m_MinSize: {x: 506, y: 342}
   m_MaxSize: {x: 12006, y: 8042}
   vertical: 0
-  controlID: 50
+  controlID: 98
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -64,12 +64,13 @@ MonoBehaviour:
     y: 0
     width: 390
     height: 931
-  m_MinSize: {x: 277, y: 71}
+  m_MinSize: {x: 102, y: 121}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 17}
+  m_ActualView: {fileID: 12}
   m_Panes:
-  - {fileID: 17}
-  m_Selected: 0
+  - {fileID: 18}
+  - {fileID: 12}
+  m_Selected: 1
   m_LastSelected: 0
 --- !u!114 &4
 MonoBehaviour:
@@ -91,9 +92,9 @@ MonoBehaviour:
     height: 595
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 18}
+  m_ActualView: {fileID: 19}
   m_Panes:
-  - {fileID: 18}
+  - {fileID: 19}
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &5
@@ -116,11 +117,11 @@ MonoBehaviour:
     height: 336
   m_MinSize: {x: 102, y: 121}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 20}
+  m_ActualView: {fileID: 21}
   m_Panes:
-  - {fileID: 16}
-  - {fileID: 20}
-  - {fileID: 13}
+  - {fileID: 17}
+  - {fileID: 21}
+  - {fileID: 14}
   m_Selected: 1
   m_LastSelected: 0
 --- !u!114 &6
@@ -210,7 +211,7 @@ MonoBehaviour:
   m_MinSize: {x: 404, y: 342}
   m_MaxSize: {x: 8004, y: 8042}
   vertical: 1
-  controlID: 51
+  controlID: 99
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -234,7 +235,7 @@ MonoBehaviour:
   m_MinSize: {x: 404, y: 221}
   m_MaxSize: {x: 8004, y: 4021}
   vertical: 0
-  controlID: 52
+  controlID: 100
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -255,15 +256,305 @@ MonoBehaviour:
     height: 595
   m_MinSize: {x: 204, y: 221}
   m_MaxSize: {x: 4004, y: 4021}
-  m_ActualView: {fileID: 19}
+  m_ActualView: {fileID: 20}
   m_Panes:
-  - {fileID: 19}
-  - {fileID: 12}
-  - {fileID: 14}
+  - {fileID: 20}
+  - {fileID: 13}
   - {fileID: 15}
+  - {fileID: 16}
   m_Selected: 0
   m_LastSelected: 3
 --- !u!114 &12
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 13401, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AutoRepaintOnSceneChange: 0
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Test Runner
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  m_DepthBufferBits: 0
+  m_Pos:
+    serializedVersion: 2
+    x: 1524
+    y: 100
+    width: 388
+    height: 910
+  m_IsSceneBased: 0
+  m_TestTypeToolbarIndex: 1
+  m_PlayModeTestListGUI:
+    m_Window: {fileID: 12}
+    newResultList:
+    - id: '[Bowlmaster]'
+      name: Bowlmaster
+      fullName: Bowlmaster
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+    - id: '[Bowlmaster][Assembly-CSharp.dll]'
+      name: Assembly-CSharp.dll
+      fullName: C:/Users/Xiaofei/Desktop/Unity Project/Bowlmaster/Library/ScriptAssemblies/Assembly-CSharp.dll
+      resultStatus: 2
+      duration: 0
+      messages: Has no TestFixtures
+      output: 
+      stacktrace: 
+      notRunnable: 1
+      ignoredOrSkipped: 0
+      description: 
+    - id: '[Bowlmaster][Assembly-UnityScript.dll]'
+      name: Assembly-UnityScript.dll
+      fullName: C:/Users/Xiaofei/Desktop/Unity Project/Bowlmaster/Library/ScriptAssemblies/Assembly-UnityScript.dll
+      resultStatus: 2
+      duration: 0
+      messages: Has no TestFixtures
+      output: 
+      stacktrace: 
+      notRunnable: 1
+      ignoredOrSkipped: 0
+      description: 
+    m_ResultText: 
+    m_ResultStacktrace: 
+    m_TestListState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: be94dafbffffff7f
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 0}
+      m_SearchString: 
+  m_EditModeTestListGUI:
+    m_Window: {fileID: 12}
+    newResultList:
+    - id: '[Bowlmaster]'
+      name: Bowlmaster
+      fullName: Bowlmaster
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+    - id: '[Bowlmaster][Assembly-CSharp-Editor.dll]'
+      name: Assembly-CSharp-Editor.dll
+      fullName: C:/Users/Xiaofei/Desktop/Unity Project/Bowlmaster/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+      resultStatus: 1
+      duration: 0.3347872
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+    - id: '[Bowlmaster][Assembly-CSharp-Editor.dll][ActionMasterTest]'
+      name: ActionMasterTest
+      fullName: ActionMasterTest
+      resultStatus: 1
+      duration: 0.3260202
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+    - id: '[Bowlmaster][Assembly-CSharp-Editor.dll][ActionMasterTest][T00PassingTest]'
+      name: T00PassingTest
+      fullName: ActionMasterTest.T00PassingTest
+      resultStatus: 1
+      duration: 0.0110957
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+    - id: '[Bowlmaster][Assembly-CSharp-Editor.dll][ActionMasterTest][T01OneStrikeReturnsEndTurn]'
+      name: T01OneStrikeReturnsEndTurn
+      fullName: ActionMasterTest.T01OneStrikeReturnsEndTurn
+      resultStatus: 1
+      duration: 0.01068
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+    - id: '[Bowlmaster][Assembly-CSharp-Editor.dll][ActionMasterTest][T02Bowl8ReturnsTidy]'
+      name: T02Bowl8ReturnsTidy
+      fullName: ActionMasterTest.T02Bowl8ReturnsTidy
+      resultStatus: 1
+      duration: 0.0108408
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+    - id: '[Bowlmaster][Assembly-CSharp-Editor.dll][ActionMasterTest][T04Bowl28SpareReturnsEndTurn]'
+      name: T04Bowl28SpareReturnsEndTurn
+      fullName: ActionMasterTest.T04Bowl28SpareReturnsEndTurn
+      resultStatus: 1
+      duration: 0.0108134
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+    - id: '[Bowlmaster][Assembly-CSharp-Editor.dll][ActionMasterTest][T05CheckResetAtStrikeInLastFrame]'
+      name: T05CheckResetAtStrikeInLastFrame
+      fullName: ActionMasterTest.T05CheckResetAtStrikeInLastFrame
+      resultStatus: 1
+      duration: 0.0106175
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+    - id: '[Bowlmaster][Assembly-CSharp-Editor.dll][ActionMasterTest][T06CheckResetAtSpareInLastFrame]'
+      name: T06CheckResetAtSpareInLastFrame
+      fullName: ActionMasterTest.T06CheckResetAtSpareInLastFrame
+      resultStatus: 1
+      duration: 0.0118535
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+    - id: '[Bowlmaster][Assembly-CSharp-Editor.dll][ActionMasterTest][T07YouTubeRollsEndInEndGame]'
+      name: T07YouTubeRollsEndInEndGame
+      fullName: ActionMasterTest.T07YouTubeRollsEndInEndGame
+      resultStatus: 1
+      duration: 0.010524
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+    - id: '[Bowlmaster][Assembly-CSharp-Editor.dll][ActionMasterTest][T08GameEndsAtBowl20]'
+      name: T08GameEndsAtBowl20
+      fullName: ActionMasterTest.T08GameEndsAtBowl20
+      resultStatus: 1
+      duration: 0.0117176
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+    - id: '[Bowlmaster][Assembly-CSharp-Editor.dll][ActionMasterTest][T09DarylBowl20Test]'
+      name: T09DarylBowl20Test
+      fullName: ActionMasterTest.T09DarylBowl20Test
+      resultStatus: 1
+      duration: 0.0118266
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+    - id: '[Bowlmaster][Assembly-CSharp-Editor.dll][ActionMasterTest][T10BensBowl20Test]'
+      name: T10BensBowl20Test
+      fullName: ActionMasterTest.T10BensBowl20Test
+      resultStatus: 1
+      duration: 0.0121828
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+    - id: '[Bowlmaster][Assembly-CSharp-Editor.dll][ActionMasterTest][T11NathanBowlIndexTest]'
+      name: T11NathanBowlIndexTest
+      fullName: ActionMasterTest.T11NathanBowlIndexTest
+      resultStatus: 1
+      duration: 0.0105593
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+    - id: '[Bowlmaster][Assembly-CSharp-Editor.dll][ActionMasterTest][T12Dondi10thFrameTurkey]'
+      name: T12Dondi10thFrameTurkey
+      fullName: ActionMasterTest.T12Dondi10thFrameTurkey
+      resultStatus: 1
+      duration: 0.0110462
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+    - id: '[Bowlmaster][Assembly-CSharp-Editor.dll][ActionMasterTest][T13ZeroOneGivesEndTurn]'
+      name: T13ZeroOneGivesEndTurn
+      fullName: ActionMasterTest.T13ZeroOneGivesEndTurn
+      resultStatus: 1
+      duration: 0.0110827
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+    m_ResultText: T09Bowl20Test (0.011s)
+    m_ResultStacktrace: 
+    m_TestListState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: f3a47efb
+      m_LastClickedID: -75586317
+      m_ExpandedIDs: ee49568396342cd4df7f55e0db9e85f1be94dafb1ea6551793315638fe11d574161c9f7fffffff7f
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 0}
+      m_SearchString: 
+--- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -289,7 +580,7 @@ MonoBehaviour:
     y: 92
     width: 1296
     height: 584
---- !u!114 &13
+--- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -347,7 +638,7 @@ MonoBehaviour:
   m_CurrentEditor: 1
   m_LayerEditor:
     m_SelectedLayerIndex: 0
---- !u!114 &14
+--- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -375,7 +666,7 @@ MonoBehaviour:
     height: 584
   m_AnimEditor: {fileID: 0}
   m_Locked: 0
---- !u!114 &15
+--- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -451,7 +742,7 @@ MonoBehaviour:
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
---- !u!114 &16
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -473,8 +764,8 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 0
-    y: 612
+    x: 8
+    y: 695
     width: 1512
     height: 315
   m_SearchFilter:
@@ -488,19 +779,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/UnityTestTools/IntegrationTestsFramework/TestRunner
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/UnityTestTools/IntegrationTestsFramework/TestRunner
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Xiaofei\Desktop\Unity Project\Bowlmaster
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 134}
-    m_SelectedIDs: 6a280000
-    m_LastClickedID: 10346
-    m_ExpandedIDs: 00000000d62500003026000034260000002700008827000098270000262b0000282b00002a2b00002c2b00002e2b0000302b000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 90}
+    m_SelectedIDs: 14580000
+    m_LastClickedID: 22548
+    m_ExpandedIDs: 00000000c82500002226000026260000f2260000f62600007c2700008c270000d4270000d8280000782b00007a2b00007c2b00007e2b0000802b0000822b00002858000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -528,7 +819,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000d6250000002700008827000098270000262b0000282b00002a2b00002c2b00002e2b0000302b0000
+    m_ExpandedIDs: 00000000c82500002226000026260000f22600007c2700008c270000782b00007a2b00007c2b00007e2b0000802b0000822b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -553,9 +844,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_SelectedInstanceIDs: 8a060000
+    m_LastClickedInstanceID: 1674
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 0a1a00006c3a00005c3a0000829ce6ff643a0000f60000000000000034250000206af2ff
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -583,7 +874,7 @@ MonoBehaviour:
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
   m_DirectoriesAreaWidth: 252
---- !u!114 &17
+--- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -616,7 +907,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
---- !u!114 &18
+--- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -644,32 +935,31 @@ MonoBehaviour:
     height: 574
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: fe2a0000
+    m_SelectedIDs: 8a060000
     m_LastClickedID: 0
-    m_ExpandedIDs: e4fbffff00000000
+    m_ExpandedIDs: 6a6fffff0472ffff468cffffec8cffff3090ffff6c93ffffbe96ffff729affffa69cffff429fffff46a2ffff6ca4ffffaaa7ffffc0acfffffcaeffff4ab1ffff36b4ffff62b7ffff58baffffc2bdffff84c1ffffc8c3ffff4ac6ffff70c8ffff92caffff64cdffff9ecfffff2cd2ffffaad6fffff4d9ffff3adcffffccdeffffa4e1ffff0ce5ffff28e8ffff94ebffff54f7ffff0ef8ffffe4fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: New Test
-      m_OriginalName: New Test
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: -6516
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 4}
     m_SearchString: 
-  m_ExpandedScenes:
-  - Game
+  m_ExpandedScenes: []
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
---- !u!114 &19
+--- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -696,14 +986,14 @@ MonoBehaviour:
     width: 1285
     height: 574
   m_SceneLighting: 1
-  lastFramingTime: 840.3680135500155
+  lastFramingTime: 36384.37915605765
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: 0, z: 0}
+    m_Target: {x: 0, y: 20, z: 50}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0}
+    m_Value: {x: 0, y: 20, z: 50}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -730,9 +1020,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -0.07633012, y: 0.6703122, z: -0.06962576, w: -0.7348507}
   m_Size:
-    m_Target: 22
+    m_Target: 62.01608
     speed: 2
-    m_Value: 22
+    m_Value: 62.01608
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -743,7 +1033,7 @@ MonoBehaviour:
   m_ReplacementString: 
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
---- !u!114 &20
+--- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}

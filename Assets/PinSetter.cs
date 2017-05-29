@@ -1,51 +1,30 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 
-public class PinSetter : MonoBehaviour {
+public class PinSetter : MonoBehaviour
+{
 
-    public Text standingPinDisp;
-    public float settledTime = 3f;
     public GameObject pinSet;
 
-    private float lastChangeTime;
-    private int lastStandingCount = -1;
-    private int currentStandingCount;
-    private bool isBallEntered = false;
-    private Ball ball;
+    private Animator animator;
+    private PinCounter pinCounter;
 
     // Use this for initialization
-    void Start () {
-        ball = FindObjectOfType<Ball>();
-	}
-	
-	// Update is called once per frame
-	void Update () {
-        if(isBallEntered)
-        {
-            standingPinDisp.text = currentStandingCount.ToString();
-
-            if (isSettled())
-            {
-                settledState();
-                Debug.Log("Settled");
-            }
-        }
-    }
-
-    void settledState()
+    void Start()
     {
-        standingPinDisp.color = Color.green;
-        isBallEntered = false;
-        ball.Reset();
+        animator = GetComponent<Animator>();
+        pinCounter = GameObject.FindObjectOfType<PinCounter>();
     }
 
+    // Update is called once per frame
+    void Update()
+    {
 
+    }
 
     public void RaisePins()
     {
-        Debug.Log("Raise");
         foreach (Pin pin in GameObject.FindObjectsOfType<Pin>())
         {
             pin.RaiseIfStanding();
@@ -54,71 +33,38 @@ public class PinSetter : MonoBehaviour {
 
     public void LowerPins()
     {
-        Debug.Log("Lower");
         foreach (Pin pin in GameObject.FindObjectsOfType<Pin>())
         {
             pin.Lower();
         }
     }
 
-    public void Renew()
+    public void RenewPins()
     {
-        Debug.Log("Renew");
-        Instantiate(pinSet, new Vector3(0f, 0f, 1829f),Quaternion.identity);
+        GameObject newPins = Instantiate(pinSet);
+        newPins.transform.position += new Vector3(0, 20, 0);
+
     }
 
-    public bool isSettled()
+    public void PerformAction(ActionMaster.Action action)
     {
-        currentStandingCount = CountStanding();
-
-        if (currentStandingCount != lastStandingCount)
+        if (action == ActionMaster.Action.Tidy)
         {
-            lastStandingCount = currentStandingCount;
-            lastChangeTime = Time.time;
-            return false;
+            animator.SetTrigger("tidyTrigger");
         }
-        else
+        else if (action == ActionMaster.Action.EndTurn)
         {
-            Debug.Log("currentStandingCount " + currentStandingCount);
-            if (Time.time - lastChangeTime > settledTime)
-            {
-                lastStandingCount = -1;
-                return true;
-            }
+            animator.SetTrigger("resetTrigger");
+            pinCounter.Reset();
         }
-
-        return false;
-    }
-
-    int CountStanding()
-    {
-        int standingCount = 0;
-        foreach (Pin pin in GameObject.FindObjectsOfType<Pin>())
+        else if (action == ActionMaster.Action.Reset)
         {
-            if (pin.isStanding())
-            {
-                standingCount++;
-            }
+            animator.SetTrigger("resetTrigger");
+            pinCounter.Reset();
         }
-
-        return standingCount;
-    }
-
-    void OnTriggerEnter(Collider collider)
-    {
-        if(collider.GetComponent<Ball>())
+        else if (action == ActionMaster.Action.EndGame)
         {
-            isBallEntered = true;
-            standingPinDisp.color = Color.red;
+            throw new UnityException("Don't know how to handle end game yet");
         }
-    }
-
-    void OnTriggerExit(Collider collider)
-    {
-        if (!collider.GetComponent<Ball>())
-        {
-            Destroy(collider.transform.parent.gameObject);
-        }
-        Debug.Log("ball exit");
     }
 }
